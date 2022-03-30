@@ -1,14 +1,18 @@
 package com.character.creator.characterdemo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.character.creator.framestrategies.impl.FirstFrame;
 
-@SpringBootApplication
-public class CharacterDemoApplication {
+import javax.swing.*;
+
+public class CharacterDemoApplication extends JFrame{
+
+    CharacterDemoApplication() {
+        new FirstFrame();
+    }
 
     public static void main(String[] args) {
 
-        SpringApplication.run(CharacterDemoApplication.class, args);
-    }
+        new CharacterDemoApplication();
 
+    }
 }
